@@ -3,8 +3,10 @@
   "version": "2.0.0",
   "description": "Set **ProxyServer** to true if you need proxy server, and populate **domain** const",
   "main": "gulpfile.js",
+  "homepage": "https://sheikinstanislav.github.io/my-comments-app/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gulp deploy"
   },
   "author": "",
   "license": "ISC",
@@ -15,11 +17,13 @@
     "css-loader": "^6.7.3",
     "cssnano": "^5.1.15",
     "fs": "^0.0.1-security",
+    "gh-pages": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-avif": "^1.1.1",
     "gulp-clean": "^0.4.0",
     "gulp-file-include": "^2.3.0",
     "gulp-filesize": "^0.0.6",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-html-img-to-picture": "^1.0.3",
     "gulp-htmlhint": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",

@@ -2,6 +2,7 @@
 const through = require('through2');
 const fs = require('fs');
 const path = require('path');
+const ghPages = require('gulp-gh-pages');
 
 // Gulp
 const gulp = require('gulp');
@@ -506,6 +507,10 @@ function imgAvifConversion() {
     .pipe(gulp.dest(paths.img.dest));
 }
 
+function deploy() {
+  return gulp.src(`${buildFolder}/**/*`).pipe(ghPages());
+}
+
 function watch() {
   // SCSS
   gulp.watch(paths.scss.src, gulp.series(scss));
@@ -551,3 +556,4 @@ exports.build = build;
 
 exports.dev = dev;
 exports.default = dev;
+exports.deploy = deploy;
