@@ -1,4 +1,41 @@
-@@include('./template-parts/header.html',{ title:'Dashboard' })
+<!DOCTYPE html>
+<html lang="en" class="no-css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-transcluent"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Core CSS Template -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Fix WSOD Flickering -->
+    <script async>
+      document.documentElement.className =
+        document.documentElement.className.replace(/\bno-css\b/, 'css-loaded');
+    </script>
+  </head>
+  <body></body>
+</html>
+
 
 <div class="template-wrapper">
   <div class="container">
@@ -120,7 +157,6 @@
         </ul>
       </nav>
     </header>
-    <div class="template-wrapper"></div>
     <div class="grid-wrapper">
       <div class="grid-row">
         <div class="grid-item">
@@ -166,7 +202,7 @@
             </div>
           </div>
 
-          <img src="./assets/img/graph-1.png" alt="graph-1" />
+          <picture><source srcset="./assets/img/graph-1.avif" type="image/avif"><source srcset="./assets/img/graph-1.webp" type="image/webp"><img src="./assets/img/graph-1.png" alt="graph-1" /></picture>
         </div>
         <div class="grid-item">
           <div class="grid-item-header">
@@ -312,7 +348,7 @@
             </div>
           </div>
 
-          <img src="./assets/img/graph-3.png" alt="graph-3" />
+          <picture><source srcset="./assets/img/graph-3.webp" type="image/webp"><img src="./assets/img/graph-3.png" alt="graph-3" /><source srcset="./assets/img/graph-3.avif" type="image/avif"></picture>
         </div>
         <div class="grid-item pb24">
           <div class="grid-item-header">
@@ -357,11 +393,16 @@
             </div>
           </div>
 
-          <img src="./assets/img/graph-4.png" alt="graph-4" />
+          <picture><source srcset="./assets/img/graph-4.webp" type="image/webp"><source srcset="./assets/img/graph-4.avif" type="image/avif"><img src="./assets/img/graph-4.png" alt="graph-4" /></picture>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-@@include('./template-parts/footer.html')
+</div>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
