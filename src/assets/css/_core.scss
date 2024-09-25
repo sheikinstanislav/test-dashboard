@@ -1,0 +1,9 @@
+.template-wrapper {
+  overflow-x: hidden;
+  max-width: var(--maxW);
+  padding: 64px 0;
+
+  @media (max-width: 991px) {
+    padding: 32px 0;
+  }
+}
