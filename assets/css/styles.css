@@ -428,6 +428,7 @@ body p {
   border-radius: 16px;
   min-height: 208px;
   overflow: hidden;
+  box-shadow: 0px 8px 24px rgba(81, 85, 195, 0.08);
 }
 .grid-item-header {
   display: flex;
